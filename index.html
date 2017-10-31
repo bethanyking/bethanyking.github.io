@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-	@top-center {
-        background: url('http://gardenx.co.nz/images/headers/header3.jpg') no-repeat 0 0;
-        background-size: 10%;
-    }
-
-	
 <head>	
 <style>
 body {
+	
+	const ImageHeader = props => (
+  <View style={{ backgroundColor: '#eee' }}>
+    <Image
+      style={StyleSheet.absoluteFill}
+      source={{ uri: 'http://gardenx.co.nz/images/headers/header3.jpg' }}
+    />
+    <Header {Welcome} style={{ backgroundColor: 'honeydew' }}/>
+  </View>
+);	
+	
 
-background-color: honeydew;
-  }	
 	
 h1 {
 	color: black;
